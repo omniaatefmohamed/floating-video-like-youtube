@@ -1,0 +1,54 @@
+/*Floating CSS Start*/
+body
+{
+    height:1000px;
+    padding-top:4%;
+}
+.wrapper{
+    width:500px;
+    margin:0 auto;
+  }
+          @keyframes fade-in-up {
+              0% {
+                  opacity: 0;
+              }
+              100% {
+                  transform: translateY(0);
+                  opacity: 1;
+              }
+          }
+  
+          .stuck {
+              position: fixed;
+              bottom: 20px;
+              right: 20px;
+              transform: translateY(100%);
+              width: 500px;
+              height: 300px;
+              animation: fade-in-up .25s ease forwards;
+              z-index: 999;
+          }
+  
+          /*Floating CSS End*/
+  
+  @keyframes example {
+      0%   {background-color: red;}
+      25%  {background-color: #ff7037;}
+      50%  {background-color: red;}
+      100% {background-color: #ff7037;}
+  }
+  p.scrolldown {
+      width: 200px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid;
+      background: #ff7037;
+      position: fixed;
+      right: 75px;
+      color: #fff;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 2s;
+  }
